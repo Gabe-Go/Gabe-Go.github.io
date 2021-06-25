@@ -1,0 +1,47 @@
+body{
+    background:
+  radial-gradient(circle, transparent 20%, slategray 20%,
+    slategray 80%, transparent 80%, transparent),
+  radial-gradient(circle, transparent 20%, slategray 20%,
+    slategray 80%, transparent 80%, transparent) 50px 50px,
+  linear-gradient(#A8B1BB 8px, transparent 8px) 0 -4px,
+  linear-gradient(90deg, #A8B1BB 8px, transparent 8px) -4px 0;
+background-color: slategray;
+background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
+font: #360557;
+font: -webkit-linear-gradient(to right, #360557 14%, #30787A 50%, #148C84 100%);
+font: -moz-linear-gradient(to right, #360557 14%, #30787A 50%, #148C84 100%);
+font: linear-gradient(to right, #360557 14%, #30787A 50%, #148C84 100%);
+
+}
+h1 {
+    text-emphasis: 12px;
+    text-align: center;
+    font-size: 72px;
+    background: -webkit-linear-gradient(rgb(216, 166, 28), rgb(255, 131, 131));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+.toolBar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.toolBar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.toolBar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.toolBar a.active {
+    background-color: #0975b4;
+    color: white;
+}
