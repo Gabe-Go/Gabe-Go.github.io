@@ -1,4 +1,6 @@
+.content{padding:0px;} /*No initial padding*/
 body{
+  margin:0;
     background:
   radial-gradient(circle, transparent 20%, slategray 20%,
     slategray 80%, transparent 80%, transparent),
@@ -8,40 +10,100 @@ body{
   linear-gradient(90deg, #A8B1BB 8px, transparent 8px) -4px 0;
 background-color: slategray;
 background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
-font: #360557;
-font: -webkit-linear-gradient(to right, #360557 14%, #30787A 50%, #148C84 100%);
-font: -moz-linear-gradient(to right, #360557 14%, #30787A 50%, #148C84 100%);
-font: linear-gradient(to right, #360557 14%, #30787A 50%, #148C84 100%);
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/***************MAIN Header******************/
+#header {
+  padding-top: 0px;
+  padding-bottom: 70px;
+  text-align: center;
+  background:rgb(144, 207, 204);
+  color:rgb(255, 255, 255)
+}
+#header a{
+  text-indent: 10px;
+  float:center;
+  font-size: 80px;
+  text-align:center;
+  font-size: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  animation: glow 1s ease-in-out infinite alternate;
+  
+}
+#header a canvas{
+  
 
 }
-h1 {
-    text-emphasis: 12px;
-    text-align: center;
-    font-size: 72px;
-    background: -webkit-linear-gradient(rgb(216, 166, 28), rgb(255, 131, 131));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00e686, 0 0 40px #00e6c0, 0 0 50px #00a5e6, 0 0 60px #e6e200, 0 0 70px #a900ec;
   }
-.toolBar {
-    overflow: hidden;
-    background-color: #333;
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ffe44d, 0 0 40px #ffd54d, 0 0 50px #4dffb5, 0 0 60px #4dff97, 0 0 70px #ff7f4d, 0 0 80px #4df3ff;
+  }
+}
+/******************************************/
+#TEST{
+  font-size: 60px;
+  color: #1abc9c;
 }
 
+/***************Section Header and Content********************/
+.textContainer{
+  margin-top: 20px;
+  background-color: rgba(206, 205, 203);
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-left: 10px;
+  padding-right:10px;
+  float: center;
+  border: rgb(185, 95, 163);
+  border-style: double;
+  box-shadow: lightblue;
+}
+.sectionHeader{
+  color:rgb(36, 41, 41);
+  
+}
+
+
+
+/****************Tool Bar Design****************/
+.toolBar {
+    overflow:inherit;
+    background-color: rgb(46, 45, 43);
+    float:center;
+}
 .toolBar a {
-    float: left;
+    float: center;
     color: #f2f2f2;
+    background-color: rgb(46, 45, 43);
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 75px;
     text-decoration: none;
     font-size: 17px;
+    border-radius: 50px;
 }
-
 .toolBar a:hover {
     background-color: #ddd;
     color: black;
 }
 
 .toolBar a.active {
-    background-color: #0975b4;
+    background-color: #7998aa;
     color: white;
+}
+/*************************************************/
+#c{
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width:300px;
+  height:100px;
+  border: 2px solid white;
 }
